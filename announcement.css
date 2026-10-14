@@ -1,0 +1,109 @@
+/* Edition-specific refinements layered over the unchanged original stylesheet. */
+.announcement-page { color: var(--color-dark-green); }
+.announcement-page .header { position: relative; height: 90px; padding: 0 6%; }
+.announcement-page .header-content { max-width: 1320px; }
+.announcement-page .logo img { height: 34px; }
+.announcement-nav { display: flex; align-items: center; gap: 38px; }
+.edition-nav { color: #fff; font-size: 14px; }
+.edition-nav span { margin-left: 10px; color: var(--color-light-green); }
+.announcement-nav .btn-register { letter-spacing: 0; font-size: 13px; padding: 10px 18px; border-width: 1px; }
+.announcement-page .hero-carousel { margin-top: 0; min-height: 0; }
+.announcement-page .carousel-container { height: auto; }
+.announcement-page .carousel-slide { position: relative; min-height: 650px; padding: 64px 24px 58px; }
+.announcement-page .slide-overlay { background: linear-gradient(180deg,rgba(12,29,20,.40),rgba(12,29,20,.57) 55%,rgba(12,29,20,.48)); }
+.announcement-page .slide-content { width: 100%; max-width: 1040px; padding: 0; }
+.edition-label { color: #D7F9E0; font-size: 12px; font-weight: 600; letter-spacing: 2.7px; margin-bottom: 27px; display: flex; justify-content: center; align-items: center; gap: 11px; }
+.announcement-page .slide-content h1 { font-size: clamp(40px,5.5vw,70px); line-height: 1.1; letter-spacing: -2px; margin-bottom: 20px; text-shadow: none; }
+.announcement-page .slide-content .hero-subtitle { font-size: clamp(18px,2vw,24px); font-weight: 500; margin-bottom: 12px; }
+.announcement-page .slide-content .hero-description { font-size: 16px; color: #e4e9e4; margin-bottom: 0; max-width: 660px; font-style: italic; line-height: 1.75; }
+.edition-details { display: flex; justify-content: center; margin: 39px auto 35px; color: white; }
+.edition-details > div { padding: 0 38px; }
+.edition-details > div + div { border-left: 1px solid #ffffff40; }
+.detail-label { font-size: 10px; letter-spacing: 2px; color: #c6d2c7; }
+.edition-details p { font-size: 22px; font-weight: 500; margin-top: 5px; }
+.announcement-page .btn-primary { display: inline-flex; justify-content: center; align-items: center; gap: 25px; background: #D7F9E0; color: #1C3423; padding: 16px 28px; border: none; border-radius: 4px; font: 600 15px var(--font-family); letter-spacing: 0; cursor: pointer; transition: background .2s; }
+.announcement-page .btn-primary:hover { background: #fff; color: #1C3423; }
+.announcement-note { margin: 23px auto 0; color: #ffffff; font-size: 15px; font-weight: 500; line-height: 1.6; max-width: 640px; }
+.first-edition { background: #f7f9f6; padding: 66px 6% 70px; }
+.announcement-page .container { max-width: 1170px; padding: 0; }
+
+.school-about { padding: 78px 6% 82px; background: #fff; }
+.about-grid { display: grid; grid-template-columns: .8fr 1.5fr; gap: 80px; }
+.about-heading-block h2 { font-size: 28px; letter-spacing: -.5px; line-height: 1.3; font-weight: 600; max-width: 290px; }
+.about-copy { max-width: 710px; }
+.about-copy p { font-size: 15px; line-height: 1.85; color: #526155; margin-bottom: 22px; }
+.about-copy .about-lead { font-size: 19px; line-height: 1.65; color: #1c3423; }
+.venue-link { color: #1c3423; text-decoration: underline; text-decoration-color: #a5b7a8; text-underline-offset: 3px; }
+.venue-link:hover { text-decoration-color: #1c3423; }
+.first-edition-grid { display: grid; grid-template-columns: 1fr 1.6fr; align-items: center; gap: 70px; }
+.edition-intro .archive-caption { margin: 16px 0 20px; font-size: 12px; line-height: 1.7; }
+.previous-edition-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; }
+.previous-edition-stats > div { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding: 18px 12px; }
+.previous-edition-stats > div + div { border-left: 1px solid #d3ded3; }
+.previous-edition-stats dd { order: -1; font-size: 52px; font-weight: 500; letter-spacing: -2px; line-height: 1; margin: 0; color: #4a7c59; }
+.previous-edition-stats dt { color: #526155; font-size: 13px; line-height: 1.5; }
+
+.section-label { color: #4A7C59; font-size: 10px; letter-spacing: 1.7px; font-weight: 600; margin-bottom: 17px; }
+.first-edition h2 { font-size: clamp(25px,2.6vw,34px); letter-spacing: -.8px; line-height: 1.25; font-weight: 500; }
+.edition-copy > p:first-child { color: #526155; font-size: 15px; line-height: 1.8; margin-bottom: 20px; }
+.archive-link { display: inline-flex; align-items: center; gap: 24px; padding-bottom: 5px; border-bottom: 1px solid #91ac96; font-weight: 600; font-size: 14px; }
+.archive-link:hover { color: #4a7c59; border-bottom-color: #1c3423; }
+.archive-caption { color: #637368; font-size: 11px; margin-top: 12px; }
+.announcement-footer { background: var(--color-dark); padding: 30px 6%; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.announcement-footer img { width: 205px; height: auto; }
+.announcement-footer p { color: #bcc7be; font-size: 11px; }
+.skip-link { position: fixed; top: -100px; left: 16px; background: white; padding: 10px 20px; z-index: 2000; }
+.skip-link:focus { top: 10px; }
+.announcement-page :focus-visible { outline: 3px solid #92bb91; outline-offset: 5px; }
+dialog { position: fixed; inset: 0; margin: auto; width: min(480px,calc(100% - 40px)); border: none; border-radius: 8px; padding: 42px; background: #f7f9f6; color: #1c3423; }
+dialog::backdrop { background: #09190fba; backdrop-filter: blur(5px); }
+dialog h2 { font-size: 30px; margin-bottom: 15px; letter-spacing: -.7px; }
+dialog p { font-size: 15px; }
+dialog .placeholder-note { margin: 20px 0; color: #637368; font-size: 12px; }
+.dialog-close { position: absolute; top: 9px; right: 13px; width: 34px; height: 34px; background: transparent; border: 0; font-size: 28px; cursor: pointer; color: #1c3423; }
+@media(max-width: 760px) {
+ .announcement-page .header { height: 78px; padding: 0 24px; }
+ .announcement-page .logo img { height: 28px; }
+ .announcement-nav { gap: 20px; }
+ .announcement-nav .btn-register { display: none; }
+ .announcement-page .carousel-slide { min-height: 610px; padding: 60px 24px; }
+ .announcement-page .slide-content h1 { font-size: 45px; letter-spacing: -1.5px; }
+ .announcement-page .slide-content .hero-subtitle { max-width: 430px; margin-left: auto; margin-right: auto; }
+ .edition-details > div { padding: 0 24px; }
+ .edition-details p { font-size: 19px; }
+ .about-grid, .first-edition-grid { gap: 32px; grid-template-columns: 1fr; }
+ .school-about { padding: 48px 28px; }
+ .about-heading-block h2 { max-width: none; font-size: 27px; }
+ .about-copy .about-lead { font-size: 18px; }
+ .previous-edition-stats { margin-top: 8px; }
+ .first-edition { padding: 44px 28px; }
+ .first-edition h2 { font-size: 29px; }
+ .announcement-footer { padding: 28px; flex-direction: column; align-items: flex-start; gap: 18px; }
+}
+@media(max-width: 440px) {
+ .announcement-page .header { padding: 0 20px; }
+ .announcement-page .logo img { height: 24px; }
+ .edition-nav { font-size: 12px; }
+ .edition-nav span { margin-left: 3px; }
+ .announcement-page .carousel-slide { min-height: 640px; padding: 50px 22px; }
+ .announcement-page .slide-content h1 { font-size: 39px; }
+ .announcement-page .slide-content .hero-subtitle { font-size: 18px; line-height: 1.5; }
+ .announcement-page .slide-content .hero-description { max-width: 260px; font-size: 14px; }
+ .edition-label { font-size: 10px; letter-spacing: 2px; }
+ .edition-details { margin: 30px auto; gap: 15px; flex-direction: column; }
+ .edition-details > div { padding: 0; }
+ .edition-details > div + div { border: none; }
+ .edition-details p { font-size: 20px; margin-top: 2px; }
+ .previous-edition-stats dd { font-size: 40px; }
+ .previous-edition-stats dt { font-size: 11px; }
+ .previous-edition-stats > div { padding: 10px 7px; }
+ .announcement-note { max-width: 310px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+}
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::after { transition: none !important; } }
+
+.hero-photo-credit { position: absolute; z-index: 3; right: 18px; bottom: 12px; margin: 0; padding: 4px 8px; background: rgba(12,29,20,.65); color: #fff; font-size: 10px; line-height: 1.6; }
+.hero-photo-credit a { text-decoration: underline; text-underline-offset: 2px; }
+@media(max-width: 440px) {
+ .announcement-page .carousel-slide { background-position: 46% center; padding-bottom: 68px; }
+ .hero-photo-credit { left: 12px; right: 12px; bottom: 10px; width: fit-content; margin-left: auto; font-size: 9px; }
+}
